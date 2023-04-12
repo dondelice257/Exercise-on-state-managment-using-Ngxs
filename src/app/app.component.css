@@ -1,0 +1,13 @@
+.active{
+    padding-bottom:5px;
+    border-bottom: 3px solid rgb(255, 196, 0);
+    color: rgb(255, 196, 0);
+}
+button{
+  cursor: pointer;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+}
+

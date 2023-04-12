@@ -1,0 +1,28 @@
+<br><br><br><br>
+<h2 class="text-center">List of users</h2>
+<div class="mt-50">
+<div class="d-flex justify-content-around">
+  <button class="btn btn-info" (click)="decrement()">Decrease</button>
+
+  <h1>{{count}}</h1>
+ <button class="btn btn-info" (click)="increment()">Increase</button>
+</div>
+
+
+<table caption="List of users" class="table  table-hover w-90">
+  <tr class="thead-dark">
+    <th class="">#</th>
+    <th class="">Name</th>
+    <th class="">Email</th>
+  </tr>
+  <tr class="table-info" *ngFor="let user of users; let i=index">
+    <td>{{i+1}}</td>
+    <td>{{user.name}}</td>
+    <td>{{user.email}}</td>
+  </tr>
+</table>
+</div>
+
+
+
+

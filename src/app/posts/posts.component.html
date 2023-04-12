@@ -1,0 +1,26 @@
+<!-- <ul *ngFor="let post of posts$ | async; let i=index">{{i}}
+  <li>User Id :{{post.userId}}</li>
+  <li>Title :{{post.title}}</li>
+  <li>Body :{{post.body}}</li>
+
+
+
+</ul> -->
+<br><br><br><br>
+<h2 class="text-center">List of Posts</h2>
+<table caption="List of users" class="table table-bordered table-hover w-90">
+  <tr class="thead-dark">
+    <th class="">#</th>
+    <th>User Id</th>
+    <th class="">Title</th>
+    <th class="">Body</th>
+  </tr>
+  <tr class="table-info" *ngFor="let post of posts$|async; let i=index">
+    <td>{{i+1}}</td>
+    <td>{{post.userId}}</td>
+    <td>{{post.title}}</td>
+    <td>{{post.body}}</td>
+
+  </tr>
+</table>
+<!-- <h3>{{count$|async}}</h3> -->

@@ -1,0 +1,54 @@
+
+
+<br><br><br><br><br>
+<!-- <form action="">
+  <input type="text" name="name" [(ngModel)]="name" required>
+<input type="text" name="surname"   [(ngModel)]="surname" required>
+<input type="age" name="age"   [(ngModel)]="age" required>
+
+
+
+<button (click)="addToList()">Add</button>
+
+</form> -->
+<h2 class="text-center">List of Clients</h2>
+<div class="d-flex align-items-center w-100">
+  <form class="w-50 d-grid justify-content-center align-items-center">
+    <div class="alert alert-danger" role="alert" *ngIf="isInvalid">
+      All the fiels must be filled
+    </div>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" name="name" [(ngModel)]="name" id="name" placeholder="Enter name">
+
+    </div>
+    <div class="form-group">
+      <label for="surname">Surname</label>
+      <input type="text" class="form-control" name="surname" [(ngModel)]="surname" id="surname" placeholder="Enter surname">
+    </div>
+    <div class="form-group">
+      <label for="surname">Age</label>
+      <input type="text" name="age" [(ngModel)]="age" class="form-control" id="age" placeholder="Enter Age">
+    </div>
+
+    <button type="submit" class="btn btn-info" (click)="addToList()">Add new client</button>
+  </form>
+
+
+
+  <table class="table table-bordered table-info">
+  <tr>
+    <th>#</th>
+    <th>Name</th>
+    <th>Surname</th>
+    <th>Age</th>
+  </tr>
+  <tr *ngFor="let client of clients; let i=index">
+  <td>{{i+1}}</td>
+  <td>{{client.name}}</td>
+  <td>{{client.surname}}</td>
+  <td>{{client.age}}</td>
+
+  </tr>
+  </table>
+</div>
