@@ -52,7 +52,6 @@ count:any=null
 this.updateData()
 this.users$.subscribe(datas=>{
   this.users=datas.slice(0, this.count)
-  // console.log(this.users.length);
 
 
 if(this.users.length===0){
@@ -61,7 +60,6 @@ if(this.users.length===0){
 }
 
 
-  // console.log(this.users.length)
   if(this.count<1){
     this.count=0
   }
