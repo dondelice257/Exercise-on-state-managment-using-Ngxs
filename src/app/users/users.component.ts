@@ -55,8 +55,10 @@ this.users$.subscribe(datas=>{
   // console.log(this.users.length);
 
 
-    this.store.dispatch(new GetUsers());
+if(this.users.length===0){
+  this.store.dispatch(new GetUsers());
 
+}
 
 
   // console.log(this.users.length)

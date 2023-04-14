@@ -25,8 +25,12 @@ export class PostsComponent {
 
 this.posts$.subscribe(data=>{
   this.list=data
-})
+
+  if(this.list.length===0){
   this.store.dispatch(new GetPosts());
+
+  }
+})
 
 
 
