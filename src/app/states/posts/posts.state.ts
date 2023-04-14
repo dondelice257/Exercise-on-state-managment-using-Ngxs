@@ -2,9 +2,8 @@ import { Injectable } from '@angular/core';
 import { Action, Selector, State, StateContext } from '@ngxs/store';
 import { catchError, tap } from 'rxjs/operators';
 import { Post } from 'src/app/model';
-import { PostService } from '../../posts/post.service';
 import { GetPosts } from './posts.action';
-import { UsersState } from '../users/users.state';
+import { PostService } from 'src/app/services/post.service';
 
 
 

@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { PostState } from '../states/posts/posts.state';
 import { Post } from '../model';
 import { GetPosts } from '../states/posts/posts.action';
-import { PostService } from './post.service';
+import { PostService } from '../services/post.service';
 
 @Component({
   selector: 'app-posts',

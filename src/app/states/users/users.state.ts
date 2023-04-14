@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Action, Selector, State, Store, StateContext } from '@ngxs/store';
 import { catchError, tap, withLatestFrom } from 'rxjs/operators';
-import { UsersService } from '../../users/users.service';
+import { UsersService } from '../../services/users.service';
 import { Decrememt, GetClients, GetUsers, Incrememt } from './users.action';
 import { User } from 'src/app/model';
 

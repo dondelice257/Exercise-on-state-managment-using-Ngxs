@@ -6,14 +6,14 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import { UsersComponent } from './users/users.component';
 import { PostsComponent } from './posts/posts.component';
-import { UsersService } from './users/users.service';
+import { UsersService } from './services/users.service';
 import { UsersState } from './states/users/users.state';
-import { PostService } from './posts/post.service';
 import { PostState } from './states/posts/posts.state';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ClientsComponent } from './clients/clients.component';
 import { ClientsState } from './states/clients/clients.state';
 import { HomeComponent } from './home/home.component';
+import { PostService } from './services/post.service';
 
 
 @NgModule({
@@ -32,7 +32,7 @@ import { HomeComponent } from './home/home.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [UsersService, PostService, ],
+  providers: [UsersService, PostService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
